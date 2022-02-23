@@ -1,6 +1,4 @@
-.clearfix:before, .clearfix:after { content: ""; display: table; }
-.clearfix:after { clear: both; }
-.clearfix { *zoom: 1; }
+
 
 
 @import url(https://fonts.googleapis.com/css?family=Roboto:500);
@@ -31,6 +29,13 @@
         margin-top: 30px;
     }
 
+    .hyperlink-botao-entrar{
+        width: 100%;
+        margin-top: 30px;
+        color: white;
+        text-decoration: none;
+    }
+
     .titulo-login{
         margin-bottom: 2px;
         font-size: 30px;
@@ -47,7 +52,12 @@
     }
 
     .espaco-input{
-        margin-bottom: 10px;
+        margin: auto;
+    }
+
+    .espaco-mostrar-senha{
+        margin: auto;
+        margin-left: 11px;
     }
 
     div.borda-tela-login{
@@ -166,7 +176,7 @@
     .google-btn {
         
         margin: auto;
-        
+        margin-top: 10px;
         width: 184px;
         height: 42px;
         background-color: #4285f4;
@@ -191,6 +201,7 @@
         height: 18px;
     }
     .google-btn .btn-text {
+        text-decoration: none;
         float: right;
         margin: 12px 25px 0px 0px;
         color: #fff;
@@ -212,6 +223,7 @@
     .opcao-google{
         color: grey;
         padding-top: auto;
+        padding-top: 10px;
         text-align: center;
 
         
@@ -241,7 +253,9 @@
     margin-left: auto;
     margin-right: auto;
 }
-
+.icon-mostrar-senha{
+    
+}
 
 
 

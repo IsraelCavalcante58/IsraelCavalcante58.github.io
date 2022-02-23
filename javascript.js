@@ -27,3 +27,12 @@ let time= 7000,
    window.addEventListener("load", start)
 
 
+function LembrarSenha() {
+   var x = document.getElementById("minha-senha");
+   if (x.type === "password") {
+      x.type = "text";
+   } else {
+      x.type = "password";
+   }
+}
+

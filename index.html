@@ -62,7 +62,7 @@
                             <div class="input-group-prepend">
                               <span class="input-group-text" id="basic-addon1"><i class="bi bi-envelope"></i></span>
                             </div>
-                            <input type="text" class="form-control email" placeholder="Digite o e-mail" aria-label="Senha" aria-describedby="basic-addon1">
+                            <input type="text" class="form-control email" placeholder="Digite o e-mail" aria-label="email" aria-describedby="basic-addon1">
                           </div>
 
                         <label for="pwd">Senha: </label>
@@ -70,9 +70,17 @@
                             <div class="input-group-prepend">
                               <span class="input-group-text" id="basic-addon1"><i class="bi bi-key"></i></span>
                             </div>
-                            <input type="password" class="form-control" placeholder="Digite a senha" aria-label="Senha" aria-describedby="basic-addon1">
+                            <input type="password" class="form-control" id="minha-senha"placeholder="Digite a senha" aria-label="Senha" aria-describedby="basic-addon1">
+                  
                           </div>
-    
+                        <div class="row">
+                        <div class="form-check pt-1 espaco-input espaco-mostrar-senha">
+                          <input onclick="LembrarSenha()" class="form-check-input" type="checkbox" value="" id="lembrar-senha">
+                          <label class="form-check-label" for="lembrar-senha">
+                               Exibir senha
+                          </label>
+                        </div>
+                        </div>
                         
     
                         <div class="form-check pt-1 espaco-input">
@@ -81,21 +89,26 @@
                               Lembrar-me
                             </label>
                           </div>
-    
-                        <div class="offset-sm-0">
-                            <button type="button" class="btn btn-primary botao-entrar ">Entrar</button>
-                        </div>
+                        
+                        <!-- <div class="offset-sm-0">
+                            <button type="input" class="btn btn-primary botao-entrar ">
+                             Entrar
+                            </button> -->
 
-                        <div class="registrar-usuario pt-3">Não tem uma conta?<a href="http://www.pexels.com" class="hyperlink-registrar" target="_blank"> Clique aqui</a>
-                        </div>
-                       
-                        <div class="opcao-google">Ou</div>
-                        <div class="google-btn ">
-                            <div class="google-icon-wrapper">
-                              <img class="google-icon" src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg"/>
+                            <a class="btn btn-primary botao-entrar" href="./dashboard.html" role="button">Entrar</a>
+                            <div class="registrar-usuario pt-3">Não tem uma conta?<a href="./registrar.html" class="hyperlink-registrar"> Clique aqui</a>
                             </div>
-                            <p class="btn-text"><b>Entre com o Google</b></p>
-                          </div>
+                            <div class="opcao-google">Ou</div>
+                            <div class="google-btn"><a  href="./dashboard.html" role="button">
+                                <div class="google-icon-wrapper">
+                                  <img class="google-icon" src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg"/>
+                                </div>
+                                <p class="btn-text"><b>Entre com o Google</b></p>
+                                </a>
+                              </div>
+                        </div>
+                        
+                       
                 </div>
                 </form>
                 </div>
