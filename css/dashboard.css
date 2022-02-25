@@ -1,19 +1,23 @@
- body{
+ .scroll{
+     overflow: hidden;
      background: #E5E5E5;
+     
  }
  
  .vh-100 {
         min-height: 100vh;
     }
+    
 
 .menu-dashboard{
+    
     margin-top: 20px;
     height: 95%;
     background: linear-gradient(180deg, #6D63FF 0%, #3B32C0 100%);
     border-radius: 40px;
     width: 97px;
 }
-.account-menu{
+.conta-menu{
     background-color: white;
     margin-right: -13px;
     height: 100%;
@@ -27,5 +31,94 @@
     border: 2px solid #6D63FF;
     margin-left: 20px;
     padding: 2px;
+    
     border-radius: 10px;
+}
+.notificacao-icone{
+    margin-top: 20px;
+    margin-left: 34px;
+}
+div .menu-dashboard hr{
+    margin-left: 15px;
+    margin-right: 15px;
+    color: white;
+    height: 1px;
+    opacity: 100%;
+}
+.circulo-icone-notificacao{
+    z-index: 1;
+    object-fit: cover;
+    position: absolute;
+    margin-top: 20px;
+    font-weight: 900;
+    margin-left: 52px;
+    font-size: 15px;
+    color: red;
+    border: 2px solid #6D63FF;
+    border-radius: 50%;
+    
+}
+    .num-notificacao{
+    
+    z-index: 2;
+    object-fit: cover;
+    position: absolute;
+    margin-top: 19px;
+    font-weight: 900;
+    margin-left: 58px;
+    color: white;
+    font-size: 13px;
+    }
+    
+.home-menu{
+    margin-left: 30px;
+    margin-top: 16px;
+}
+
+.botoes-menu{
+    text-shadow: 0px 0px 5px #000000;
+    font-size: 33px;
+    color: white;
+    cursor: pointer;
+    
+}
+
+.botoes-menu:hover{
+    color: #E5E5E5;
+    text-shadow: 0px 0px 8px #000000;
+}
+.sono{
+    margin-left: 34px;
+    margin-top: 20px;
+}
+
+.ajuda-botao{
+
+    text-shadow: 0px 0px 5px #000000;
+    margin-top: 570px;
+    margin-left: 38px;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+}
+.ajuda-botao:hover{
+    color: #E5E5E5;
+    text-shadow: 0px 0px 8px #000000;
+}
+.amigo-botao{
+    font-size: 30px ;
+    margin-top: 20px;
+    margin-left: 30px;
+
+}
+.ranking-botao{
+    margin-top: 20px;
+    margin-left:30px ;
+}
+.ranking-botao[title]:hover::after {
+  content: attr(title);
+  background-color: red;
+  position: absolute;
+  top: -100%;
+  left: 0;
 }
