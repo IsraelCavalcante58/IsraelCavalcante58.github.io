@@ -20,13 +20,16 @@
 {
     .background-logo{
         
-        background-color: rgb(97,140,181);
+        background: linear-gradient(180deg, #6D63FF 0%, #3B32C0 100%);
+        
         
     }
 
     .botao-entrar{
         width: 100%;
         margin-top: 30px;
+     background: linear-gradient(180deg, #6D63FF 0%, #3B32C0 100%);
+
     }
 
     .hyperlink-botao-entrar{
