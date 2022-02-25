@@ -1,9 +1,20 @@
- .scroll{
-     overflow: hidden;
-     background: #E5E5E5;
-     
- }
- 
+@import url(https://fonts.googleapis.com/css?family=Roboto:500);
+@font-face {
+    font-family: samsungsharp;
+    src: url("../fontes/samsungsharpsans.otf");
+  }
+
+  @font-face {
+    font-family: poetsenone;
+    src: url("../fontes/poetsen-one.ttf");
+  }
+
+
+html, body{
+    font-family: samsungsharp;
+    background: #E5E5E5;
+    overflow: hidden;
+}
  .vh-100 {
         min-height: 100vh;
     }
@@ -22,6 +33,7 @@
     margin-right: -13px;
     height: 100%;
     border-radius: 10px;
+    font-weight: bold;
     
 }
 .avatar{
@@ -121,4 +133,97 @@ div .menu-dashboard hr{
   position: absolute;
   top: -100%;
   left: 0;
+}
+
+#chart{
+    font-size: 20px;
+    
+    
+}
+.apexcharts-canvas{
+    background: #ffffff;
+    border-radius: 2%;
+}
+
+
+
+.descricao-grafico{
+    margin-top: 48px;
+    font-size: 20px;
+}
+.nome-usuario{
+    margin-top: 40px;
+    margin-left: 7px;
+    position: absolute;
+}
+.status-usuario{
+    font-size: 14px;
+    margin-left: 24px;
+    text-align: center;
+    margin-top: -10px;
+    color: rgb(179, 179, 179);
+    position: relative;
+   
+}
+.input-procurar{
+    border-radius: 10px 0px 0px 10px;
+    width: 400px;
+}
+
+.botao-procurar{
+    border-radius: 0px 10px 10px 0px;
+    background-color: #6D63FF;
+    border: none;
+}
+.procurar{
+    padding-top: 30px;
+}
+canvas {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+.gauge-grafico{
+    text-align: center;
+    font-size: 14px;
+    margin-top: 260px;
+}
+.peso-perdido{
+    color: grey;
+    font-weight: normal;
+}
+.icone-configuracao{
+    border-radius: 7px;
+    color: #20B9FD;
+    background: #E5F8FF;
+    font-size: 30px;
+    text-align: center;
+}
+.botao-texto-conta-menu{
+    margin-top: 10px;
+}
+.botao-margin-menu{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.icone-dieta{
+    
+    border-radius: 7px;
+    color: #5631FA;
+    background: #ECEAFF;
+    font-size: 30px;
+    text-align: center;
+
+}
+.icone-meta{
+    border-radius: 7px;
+    color: #FD6B22;
+    background: #FEF0E7;
+    font-size: 30px;
+    text-align: center;
+}
+.botoes-conta-menu{
+    margin-top: 200px;
 }

@@ -13,15 +13,12 @@
         <link rel="stylesheet" type="text/css" href="./css/dashboard.css">
         <link rel="stylesheet" type="text/css"
             href="//fonts.googleapis.com/css?family=Open+Sans" />
-        <script src="https://kit.fontawesome.com/67f01a5142.js"
-            crossorigin="anonymous"></script>
-
 
         <title>Health-Track Dashboard</title>
     </head>
 
     <body>
-        <div class="container-fluid scroll">
+        <div class="container-fluid">
             <div class="row vh-100">
                 <div class="col-md-1">
 
@@ -47,10 +44,12 @@
                                 sono"></i>
                         </div>
                         <div>
-                            <i title="Amigos" class="fa-solid fa-user-group botoes-menu amigo-botao"></i>
+                            <i title="Amigos" class="fa-solid fa-user-group
+                                botoes-menu amigo-botao"></i>
                         </div>
                         <div>
-                            <i title="Ranking" class="fa-solid fa-medal botoes-menu ranking-botao"></i>
+                            <i title="Ranking" class="fa-solid fa-medal
+                                botoes-menu ranking-botao"></i>
                         </div>
                         <div>
                             <i title="Ajuda" class="fa-solid fa-circle-question
@@ -62,23 +61,113 @@
                     </div>
                 </div>
                 <div class="col-md-9">
+                    <div class="row procurar">
+                        <div class="input-group">
+                            <div class="form-outline">
+                                <input placeholder="Procure" type="search"
+                                    id="form1"
+                                    class="form-control input-procurar" />
+                            </div>
+                            <button type="button" class="btn btn-primary
+                                botao-procurar">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="descricao-grafico">
+                        <span>Gráfico de Atividade e Calorias perdidas</span>
+                    </div>
+                    <div id="chart">
+
+
+                    </div>
+                    
+                    
+                    
 
                 </div>
 
                 <div class="col-md-2">
+
                     <div class="conta-menu">
+
                         <div class="div-avatar">
                             <img class="avatar" src="./Imagens/avatar.jpg"
-                                alt="">
+                                alt=""><span class="nome-usuario">Israel
+                                Cavalcante</span>
+                            <div class="row">
+                                <span class="status-usuario">
+                                    Está Online
+                                </span>
+                            </div>
                         </div>
+                        <div class="botoes-conta-menu">
+                        <div class="row botao-margin-menu">
+                            <div class="col-md-3 ">
+                                <div class="icone-meta">
+                                    <i class="fa-solid fa-bullseye"></i>
+                                </div>                  
+                            </div>
+                            <div class="col-md-9">
+                                <div class="botao-texto-conta-menu">
+                                Metas
+                            </div>
+                            </div>                            
+                        </div>   
+
+                        <div class="row botao-margin-menu">
+                            <div class="col-md-3 ">
+                                <div class="icone-dieta">
+                                    <i class="fa-solid fa-apple-whole"></i>
+                                </div>                  
+                            </div>
+                            <div class="col-md-9">
+                                <div class="botao-texto-conta-menu">
+                                Dieta
+                            </div>
+                            </div>                            
+                        </div>
+
+
+
+                        <div class="row botao-margin-menu">
+                            <div class="col-md-3 ">
+                                <div class="icone-configuracao">
+                                    <i class="fa-solid fa-gear "></i>
+                                </div>                  
+                            </div>
+                            <div class="col-md-9">
+                                <div class="botao-texto-conta-menu">
+                                Configurações
+                            </div>
+                            </div>                            
+                        </div>
+                    </div>
+                        <div class="row gauge-grafico">
+                            <p>Meta Mensal</p>
+                            <p >Peso perdido: 5kg  <span class="peso-perdido">/ 10kg </span></p>
+                            <div id="canvas-holder">
+                                <canvas id="gauge"></canvas>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    </div>
                     </div>
                 </div>
             </div>
 
         </div>
 
-
-
+        <script src="https://unpkg.com/chart.js@2.8.0/dist/Chart.bundle.js"></script>
+        <script
+            src="https://unpkg.com/chartjs-gauge@0.3.0/dist/chartjs-gauge.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+        <script src="https://kit.fontawesome.com/67f01a5142.js"
+            crossorigin="anonymous"></script>
+        <script src="dashboard.js"></script>
+        <script src="gauge.js"></script>
 
     </body>
 
