@@ -227,3 +227,98 @@ canvas {
 .botoes-conta-menu{
     margin-top: 200px;
 }
+
+.botao-agua{
+    cursor: pointer;
+}
+
+.box-baixo{
+    width: 277px;
+height: 222px;
+
+background: #E95F8B;
+border-radius: 40px;
+}
+
+.box-cima{
+    width: 277px;
+height: 126px;
+
+background: #FF9ABA;
+border: 2px solid #FFD7D7;
+box-sizing: border-box;
+border-radius: 40px;
+}
+.box-dentro{
+margin-left: 29px;
+margin-top: 26px;
+width: 81px;
+height: 74px;
+
+background: #FF8CB1;
+box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+border-radius: 20px;
+}
+.foto-agua{
+    width: 47.41px;
+    margin-top: 15px;
+    margin-left: 17px;
+}
+.agua-descricao{
+    color: white;
+    font-weight: bold;
+    padding-top: 40px;
+    padding-left: 20px;
+}
+.agua-descricao-meta{
+    font-weight: normal;
+    font-size: 14px;
+}
+.foto-complemento{
+   padding-top: 40px;
+    padding-left: 0;
+}
+.agua-texto{
+    color: white;
+    padding-top: 50px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.box-passos-grande{
+width: 277px;
+height: 110px;
+
+
+margin-top: 73px;
+padding-top: 18px;
+padding-left: 22px;
+background: linear-gradient(180deg, #6D63FF 0%, #3B32C0 100%);
+border-radius: 40px;
+}
+
+.box-passos-pequena{
+width: 81px;
+height: 74px;
+
+background: rgba(255, 255, 255, 0.2);
+box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+border-radius: 20px;
+}
+.box-passos-pequena{
+    padding-top: 9px;
+    padding-left: 13px;
+}
+.passos-diarios{
+    padding-left:0px;
+    color: white;
+    padding-top: 8px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.passos{
+    margin-top: 73px;
+}
+.box-passos{
+    padding-left: 40px;
+}

@@ -12,8 +12,8 @@ var options = {
         }],
     
     chart: {
-        width: 681,
-        height: 363,
+        width: 900,
+        height: 400,
         type: 'area'
     },
     dataLabels: {

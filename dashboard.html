@@ -1,132 +1,186 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width,initial-scale=1">
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-            rel="stylesheet"
-            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-            crossorigin="anonymous">
-        <link rel="stylesheet" type="text/css" href="./css/dashboard.css">
-        <link rel="stylesheet" type="text/css"
-            href="//fonts.googleapis.com/css?family=Open+Sans" />
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./css/dashboard.css">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
 
-        <title>Health-Track Dashboard</title>
-    </head>
+    <title>Health-Track Dashboard</title>
+</head>
 
-    <body>
-        <div class="container-fluid">
-            <div class="row vh-100">
-                <div class="col-md-1">
+<body>
+    <div class="container-fluid">
+        <div class="row vh-100">
+            <div class="col-md-1">
 
-                    <div class="menu-dashboard">
+                <div class="menu-dashboard">
 
-                        <div>
-                            <label class="num-notificacao">9</label>
-                            <i class="fa-solid fa-circle
+                    <div>
+                        <label class="num-notificacao">9</label>
+                        <i class="fa-solid fa-circle
                                 circulo-icone-notificacao"></i>
-                            <i title="Notificações" class="fa-regular fa-bell
+                        <i title="Notificações" class="fa-regular fa-bell
                                 notificacao-icone botoes-menu"></i>
 
 
-                        </div>
-                        <hr>
-                        <div>
-                            <i title="Menu Principal" class="fa-solid fa-house
+                    </div>
+                    <hr>
+                    <div>
+                        <i title="Menu Principal" class="fa-solid fa-house
                                 home-menu botoes-menu"></i>
-                        </div>
+                    </div>
 
-                        <div>
-                            <i title="Sono" class="fa-solid fa-moon botoes-menu
+                    <div>
+                        <i title="Sono" class="fa-solid fa-moon botoes-menu
                                 sono"></i>
-                        </div>
-                        <div>
-                            <i title="Amigos" class="fa-solid fa-user-group
-                                botoes-menu amigo-botao"></i>
-                        </div>
-                        <div>
-                            <i title="Ranking" class="fa-solid fa-medal
-                                botoes-menu ranking-botao"></i>
-                        </div>
-                        <div>
-                            <i title="Ajuda" class="fa-solid fa-circle-question
-                                ajuda-botao"></i>
-                        </div>
                     </div>
                     <div>
-
+                        <i title="Amigos" class="fa-solid fa-user-group
+                                botoes-menu amigo-botao"></i>
+                    </div>
+                    <div>
+                        <i title="Ranking" class="fa-solid fa-medal
+                                botoes-menu ranking-botao"></i>
+                    </div>
+                    <div>
+                        <i title="Ajuda" class="fa-solid fa-circle-question
+                                ajuda-botao"></i>
                     </div>
                 </div>
-                <div class="col-md-9">
-                    <div class="row procurar">
-                        <div class="input-group">
-                            <div class="form-outline">
-                                <input placeholder="Procure" type="search"
-                                    id="form1"
-                                    class="form-control input-procurar" />
-                            </div>
-                            <button type="button" class="btn btn-primary
+                <div>
+
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div class="row procurar">
+                    <div class="input-group">
+                        <div class="form-outline">
+                            <input placeholder="Procure" type="search" id="form1" class="form-control input-procurar" />
+                        </div>
+                        <button type="button" class="btn btn-primary
                                 botao-procurar">
-                                <i class="fas fa-search"></i>
-                            </button>
-                        </div>
+                            <i class="fas fa-search"></i>
+                        </button>
                     </div>
-
-                    <div class="descricao-grafico">
-                        <span>Gráfico de Atividade e Calorias perdidas</span>
-                    </div>
-                    <div id="chart">
-
-
-                    </div>
-                    
-                    
-                    
-
                 </div>
 
-                <div class="col-md-2">
 
-                    <div class="conta-menu">
 
-                        <div class="div-avatar">
-                            <img class="avatar" src="./Imagens/avatar.jpg"
-                                alt=""><span class="nome-usuario">Israel
-                                Cavalcante</span>
-                            <div class="row">
-                                <span class="status-usuario">
-                                    Está Online
-                                </span>
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="descricao-grafico">
+                            <span>Gráfico de Atividade e Calorias perdidas</span>
+                        </div>
+                        <div id="chart">
+
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 box-passos">
+
+                        <div class="row">
+                            <div class="col-md-12">
+
+                                    <div class="box-passos-grande">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                         <div class="box-passos-pequena">
+                                                <div class="col-md-6">
+                                            <img src="./Imagens/tenis.png" alt="">
+                                        </div>
+                                        
+                                        </div>
+                                        </div>
+                                        <div class="col-md-6 passos-diarios">
+                                            <p>Passos Diários</p>
+                                        </div>
+                                        </div>
+                                    </div>
                             </div>
                         </div>
-                        <div class="botoes-conta-menu">
+
+                        <div class="row passos">
+                            <div class="col-md-12">
+                            <div class="box-baixo">
+
+                                <div class="box-cima">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="box-dentro">
+                                                <img class="foto-agua" src="./Imagens/agua.png" alt="">
+
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <p class="agua-texto">Água</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-md-6 agua-descricao">
+                                            <span>Consumido</span>
+                                            <p>400ML <span class="agua-descricao-meta"> /1.000ML</span></p>
+
+                                        </div>
+                                        <div class="col-md-6 foto-complemento">
+                                            <img src="./Imagens/Vector 12.svg" alt="">
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-2">
+
+                <div class="conta-menu">
+
+                    <div class="div-avatar">
+                        <img class="avatar" src="./Imagens/avatar.jpg" alt=""><span class="nome-usuario">Israel
+                            Cavalcante</span>
+                        <div class="row">
+                            <span class="status-usuario">
+                                Está Online
+                            </span>
+                        </div>
+                    </div>
+                    <div class="botoes-conta-menu">
                         <div class="row botao-margin-menu">
                             <div class="col-md-3 ">
                                 <div class="icone-meta">
                                     <i class="fa-solid fa-bullseye"></i>
-                                </div>                  
+                                </div>
                             </div>
                             <div class="col-md-9">
                                 <div class="botao-texto-conta-menu">
-                                Metas
+                                    Metas
+                                </div>
                             </div>
-                            </div>                            
-                        </div>   
+                        </div>
 
                         <div class="row botao-margin-menu">
                             <div class="col-md-3 ">
                                 <div class="icone-dieta">
                                     <i class="fa-solid fa-apple-whole"></i>
-                                </div>                  
+                                </div>
                             </div>
                             <div class="col-md-9">
                                 <div class="botao-texto-conta-menu">
-                                Dieta
+                                    Dieta
+                                </div>
                             </div>
-                            </div>                            
                         </div>
 
 
@@ -135,40 +189,38 @@
                             <div class="col-md-3 ">
                                 <div class="icone-configuracao">
                                     <i class="fa-solid fa-gear "></i>
-                                </div>                  
+                                </div>
                             </div>
                             <div class="col-md-9">
                                 <div class="botao-texto-conta-menu">
-                                Configurações
+                                    Configurações
+                                </div>
                             </div>
-                            </div>                            
                         </div>
                     </div>
-                        <div class="row gauge-grafico">
-                            <p>Meta Mensal</p>
-                            <p >Peso perdido: 5kg  <span class="peso-perdido">/ 10kg </span></p>
-                            <div id="canvas-holder">
-                                <canvas id="gauge"></canvas>
-                            </div>
-                            
+                    <div class="row gauge-grafico">
+                        <p>Meta Mensal</p>
+                        <p>Peso perdido: 5kg <span class="peso-perdido">/ 10kg </span></p>
+                        <div id="canvas-holder">
+                            <canvas id="gauge"></canvas>
                         </div>
-                    </div>
-                    </div>
+
                     </div>
                 </div>
             </div>
-
         </div>
+    </div>
+    </div>
 
-        <script src="https://unpkg.com/chart.js@2.8.0/dist/Chart.bundle.js"></script>
-        <script
-            src="https://unpkg.com/chartjs-gauge@0.3.0/dist/chartjs-gauge.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
-        <script src="https://kit.fontawesome.com/67f01a5142.js"
-            crossorigin="anonymous"></script>
-        <script src="dashboard.js"></script>
-        <script src="gauge.js"></script>
+    </div>
 
-    </body>
+    <script src="https://unpkg.com/chart.js@2.8.0/dist/Chart.bundle.js"></script>
+    <script src="https://unpkg.com/chartjs-gauge@0.3.0/dist/chartjs-gauge.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="https://kit.fontawesome.com/67f01a5142.js" crossorigin="anonymous"></script>
+    <script src="dashboard.js"></script>
+    <script src="gauge.js"></script>
+
+</body>
 
 </html>
