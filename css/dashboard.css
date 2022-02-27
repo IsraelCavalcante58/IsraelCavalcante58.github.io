@@ -9,11 +9,13 @@
     src: url("../fontes/poetsen-one.ttf");
   }
 
-
+@media screen 
+{
 html, body{
     font-family: samsungsharp;
     background: #E5E5E5;
-    overflow: hidden;
+    min-width: 100%;
+    overflow-x: hidden;
 }
  .vh-100 {
         min-height: 100vh;
@@ -29,6 +31,7 @@ html, body{
     width: 97px;
 }
 .conta-menu{
+    
     background-color: white;
     margin-right: -13px;
     height: 100%;
@@ -322,3 +325,73 @@ border-radius: 20px;
 .box-passos{
     padding-left: 40px;
 }
+
+.quadrado-grande-botoes-inferior{
+    margin-top: 80px;
+    width: 288px;
+    height: 257px;
+    margin-right: 48px;
+    background: #FFFFFF;
+    border-radius: 50px;
+
+}
+.quadrado-pequeno-botoes-inferior{
+width: 92px;
+border-radius: 20px;
+height: 83px;
+margin-left: 88px;
+    margin-top: -38px;
+background: linear-gradient(180deg, #3F36C6 0%, #4439DE 100%);
+box-shadow: 0px 4px 7px -1px rgba(0, 0, 0, 0.25);
+position: absolute;
+}
+
+.titulo-botoes-inferior{
+font-weight: 600;
+font-size: 20px;
+line-height: 24px;
+letter-spacing: -0.005em;
+text-align: center;
+color: #4138D0;
+margin-top: 69px;
+}
+
+.subtitulo-botoes-inferior{
+font-size: 14px;
+line-height: 17px;
+/* identical to box height */
+text-align: center;
+letter-spacing: -0.005em;
+
+color: #787878;
+}
+.titulo-progresso{
+font-weight: 500;
+font-size: 15px;
+line-height: 18px;
+letter-spacing: -0.005em;
+color: #4138D0;
+margin-top:32px;
+}
+.barra-progresso-inferior{
+    background:linear-gradient(90deg, rgba(109,99,255,1) 21%, rgba(59,50,192,1) 65%);
+     
+}
+.barra-progresso{
+    height: 8px !important;
+}
+.objetivo-botao-inferior{
+    margin-top: 10px;
+    color: #787878;
+}
+.imagem-botao-inferior{
+    margin-left: 23px;
+    margin-top: 15px;
+}
+.foto-calorias{
+    width: 56px;
+    height: 56px;
+
+    
+
+}}
