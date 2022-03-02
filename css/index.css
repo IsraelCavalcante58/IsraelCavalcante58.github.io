@@ -60,7 +60,6 @@
 
     .espaco-mostrar-senha{
         margin: auto;
-        margin-left: 11px;
     }
 
     div.borda-tela-login{
@@ -95,8 +94,8 @@
         display: block;
     margin-left: auto;
     margin-right: auto;
-        height: 10%;
-        width: 10%;
+        height: 7%;
+        width: 7%;
     }
 
 

@@ -11,11 +11,14 @@ var options = {
         data: [0.1, 0.3, 0.2, 0.4, 0.1250, 0.2, 0.4]
         }],
     
+    
     chart: {
-        width: 900,
-        height: 400,
-        type: 'area'
+        height: '100%',
+        width: '100%',
+        type: 'area',
     },
+
+    
     dataLabels: {
         enabled: false
     },

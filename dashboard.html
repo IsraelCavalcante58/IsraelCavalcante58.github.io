@@ -11,16 +11,17 @@
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
 
     <title>Health-Track Dashboard</title>
+
 </head>
 
 <body>
-    <div class="container-fluid">
-        <div class="row flex-grow-1">
+    <div class="container-fluid vh-100">
+        <div class="row flex-grow-1 vh-100">
             <div class="col-md-1">
 
                 <div class="menu-dashboard">
 
-                    <div>
+                    <div class="notificacao">
                         <label class="num-notificacao">9</label>
                         <i class="fa-solid fa-circle
                                 circulo-icone-notificacao"></i>
@@ -56,17 +57,35 @@
 
                 </div>
             </div>
+            <div class="logo-mobile">Health Track</div>
+
             <div class="col-md-9">
-                <div class="row procurar">
-                    <div class="input-group">
-                        <div class="form-outline">
-                            <input placeholder="Procure" type="search" id="form1" class="form-control input-procurar" />
+                <div class="row">
+                    <div class="col-md-7">
+                        <div class="procurar">
+                            <div class="row">
+                                <div class="col-md-6 p-0 procurar-col-1">
+                                    <div class="form-outline">
+                                        <input placeholder="Procure" type="search" id="form1"
+                                            class="form-control input-procurar" />
+                                    </div>
+                                </div>
+                                <div class="col-md-6 p-0 procurar-col-2">
+                                    <button type="button" class="btn btn-primary
+                                                                                            botao-procurar">
+                                        <i class="fas fa-search"></i>
+                                    </button>
+                                </div>
+                            </div>
+
+
                         </div>
-                        <button type="button" class="btn btn-primary
-                                botao-procurar">
-                            <i class="fas fa-search"></i>
-                        </button>
                     </div>
+                    <div class="col-md-5">
+
+                        <div class="logo">Health Track</div>
+                    </div>
+
                 </div>
 
 
@@ -90,47 +109,49 @@
 
                                 <div class="box-passos-grande">
 
-                                    <div class="row">
-                                        <div class="col-md-6">
+                                    <div class="row ">
+                                        <div class="col-md-6 botao-passos">
+
                                             <div class="box-passos-pequena">
                                                 <div class="col-md-6">
-                                                    <img src="./Imagens/tenis.png" alt="">
+                                                    <img class="tenis" src="./Imagens/tenis.png" alt="">
                                                 </div>
 
                                             </div>
                                         </div>
-                                        <div class="col-md-6 passos-diarios">
-                                            <p>Passos Diários</p>
+                                        <div class="col-md-6 passos-diarios botao-passos">
+
+                                            <span>Passos Diários</span>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="row passos">
+                        <div class="row agua">
                             <div class="col-md-12">
                                 <div class="box-baixo">
 
                                     <div class="box-cima">
                                         <div class="row">
-                                            <div class="col-md-6">
+                                            <div class="col-md-6 botao-agua">
                                                 <div class="box-dentro">
                                                     <img class="foto-agua" src="./Imagens/agua.png" alt="">
 
                                                 </div>
                                             </div>
-                                            <div class="col-md-6">
+                                            <div class="col-md-6 botao-agua">
                                                 <p class="agua-texto">Água</p>
                                             </div>
                                         </div>
 
                                         <div class="row">
-                                            <div class="col-md-6 agua-descricao">
+                                            <div class="col-md-6 agua-descricao botao-agua">
                                                 <span>Consumido</span>
                                                 <p>400ML <span class="agua-descricao-meta"> /1.000ML</span></p>
 
                                             </div>
-                                            <div class="col-md-6 foto-complemento">
+                                            <div class="col-md-6 foto-complemento botao-agua">
                                                 <img src="./Imagens/Vector 12.svg" alt="">
 
                                             </div>
@@ -143,7 +164,7 @@
 
                     </div>
                 </div>
-                <div class="row">
+                <div class="row botoes-inferior">
                     <div class="col-md-3 quadrado-grande-botoes-inferior">
 
                         <div class="quadrado-pequeno-botoes-inferior">
@@ -211,12 +232,18 @@
                 <div class="conta-menu">
 
                     <div class="div-avatar">
-                        <img class="avatar" src="./Imagens/avatar.jpg" alt=""><span class="nome-usuario">Israel
-                            Cavalcante</span>
                         <div class="row">
-                            <span class="status-usuario">
-                                Está Online
-                            </span>
+                            <div class="col-md-5">
+                                <img class="avatar" src="./Imagens/avatar.jpg" alt="">
+                            </div>
+                            <div class="col-md-7">
+                                <p class="nome-usuario">Israel
+                                    Cavalcante</p>
+
+                                <span class="status-usuario">
+                                    Está Online
+                                </span>
+                            </div>
                         </div>
                     </div>
                     <div class="botoes-conta-menu">
