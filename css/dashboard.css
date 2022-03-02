@@ -133,13 +133,7 @@ div .menu-dashboard hr{
     margin-top: 20px;
     margin-left:30px ;
 }
-.ranking-botao[title]:hover::after {
-  content: attr(title);
-  background-color: red;
-  position: sticky;
-  top: -100%;
-  left: 0;
-}
+
 
 #chart{
     font-size: 20px;
@@ -407,15 +401,28 @@ margin-top:32px;
 .foto-calorias{
     width: 56px;
     height: 56px;
-
-    
-
-}}
+}
+    .botao-menu{
+        display: none;
+    }
+    .botao-perfil{
+        display: none;
+    }
+}
 
 
 
 
 @media  only screen and (max-width: 1343px){
+    .botao-perfil{
+        width: 10%;
+    }
+    .botao-menu{
+        width: 25%;
+    }
+    .coluna-logo{
+        width: 60%;
+    }
     .menu-dashboard{
         display: none;
     }
@@ -476,9 +483,10 @@ margin-top:32px;
         margin-top: 20px;
     }
     .quadrado-grande-botoes-inferior{
-    width: 186px;
+    width: 176px;
     height: 146px;
     margin-right: 21px;
+    margin-left: 11px;
     }
     .titulo-botoes-inferior{
         font-size: 16px;
@@ -512,4 +520,39 @@ margin-top:32px;
         
     }
 }
+
+
+
+
+
+@media  only screen and (max-width: 414px){
+
+   .quadrado-grande-botoes-inferior{
+    width: 156px;
+    height: 146px;
+    margin-right: 10px;
+    margin-left: 10px;
+    }
+    .quadrado-pequeno-botoes-inferior {
+        margin-left: 30px;
+    
+}
+    .objetivo-botao-inferior{
+        font-size: 11px;
+        margin-top: 7px;
+        margin-left: 9px;
+    }
+    .titulo-botoes-inferior{
+        padding: 0;
+        font-size: 14px;
+    }
+    .subtitulo-botoes-inferior{
+        font-size: 13px;
+    }
+    .box-passos{
+        padding-left: 20px;
+    }
+
+}
+
 
