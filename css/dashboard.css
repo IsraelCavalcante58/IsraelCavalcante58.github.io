@@ -11,6 +11,13 @@
 
 @media screen 
 {
+
+    .apexcharts-toolbar {
+    z-index: 0 !important;
+}
+
+
+
 html, body{
     font-family: samsungsharp;
     background: #E5E5E5;
@@ -139,7 +146,11 @@ div .menu-dashboard hr{
     font-size: 20px;
     max-width: 900px;
     
+    
 }
+
+
+
 .apexcharts-canvas{
     background: #ffffff;
     border-radius: 2%;
@@ -180,19 +191,8 @@ div .menu-dashboard hr{
 }
 .procurar-tamanho-col{
 }
-.logo{
-    margin-left: 40px;
-    font-size: 30px;    
-    font-family: poetsenone;
-    margin-top: 10px;
-}
-.logo-mobile{
-    display: none;
-    text-align: center;
-    font-size: 30px;    
-    font-family: poetsenone;
-    margin-top: 10px;
-}
+
+
 canvas {
   -moz-user-select: none;
   -webkit-user-select: none;
@@ -354,6 +354,8 @@ margin-left: 88px;
 background: linear-gradient(180deg, #3F36C6 0%, #4439DE 100%);
 box-shadow: 0px 4px 7px -1px rgba(0, 0, 0, 0.25);
 position: sticky;
+        
+
 }
 
 .titulo-botoes-inferior{
@@ -408,12 +410,180 @@ margin-top:32px;
     .botao-perfil{
         display: none;
     }
+
+    .header {
+
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 100%;
+    box-shadow: none;
+
+    background-color: #6D63FF ;
+    position: fixed;
+    height: 60px!important;
+    overflow: hidden;
+    z-index: 10;
+}
+
+
+
+.main {
+    margin: 0 auto;
+    display: block;
+    height: 100%;
+    margin-top: 60px;
+}
+.mainInner{
+    display: table;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+.mainInner div{
+    display:table-cell;
+    vertical-align: middle;
+    font-size: 3em;
+    font-weight: bold;
+    letter-spacing: 1.25px;
+}
+#sidebarMenu {
+    position:relative;
+    z-index: 99;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    width: 135px;
+    margin-top: 60px;
+    transform: translateX(-250px);
+    transition: transform 250ms ease-in-out;
+    background: linear-gradient(180deg, #6D63FF 0%, #3B32C0 100%);
+    
+}
+.sidebarMenuInner{
+    margin:0;
+    padding:0;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.10);
+}
+
+
+.sidebarMenuInner li{
+    list-style: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 20px;
+    cursor: pointer;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+}
+.sidebarMenuInner li span{
+    display: block;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.50);
+}
+.sidebarMenuInner li a{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+}
+input[type="checkbox"]:checked ~ #sidebarMenu {
+    transform: translateX(0);
+}
+
+input[type=checkbox] {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    display: none;
+}
+
+.sidebarIconToggle {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    cursor: pointer;
+    position: fixed;
+    z-index: 99;
+    height: 100%;
+    width: 100%;
+    top: 22px;
+    left: 15px;
+    height: 22px;
+    width: 22px;
+    display: none;
+}
+.spinner {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background-color: #fff;
+}
+.horizontal {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    position: relative;
+    float: left;
+    margin-top: 3px;
+}
+.diagonal.part-1 {
+    position: relative;
+    transition: all 0.3s;
+    box-sizing: border-box;
+    float: left;
+}
+
+
+
+.diagonal.part-2 {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    position: relative;
+    float: left;
+    margin-top: 3px;
+}
+input[type=checkbox]:checked ~ .sidebarIconToggle > .horizontal {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    opacity: 0;
+}
+input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-1 {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    transform: rotate(135deg);
+    margin-top: 8px;
+}
+input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    transform: rotate(-135deg);
+    margin-top: -9px;
+}
+.logo-mobile-animacao{
+  color: White;
+  font-family: poetsenone;
+  margin-left: 45%;
+  font-size: 30px;
+  margin-top: 10px;
+}
+
 }
 
 
 
 
 @media  only screen and (max-width: 1343px){
+
+    .sidebarIconToggle{
+        display: block;
+    }
+    .logo-mobile-animacao{
+        margin-left: 31%;
+    }
+    
+
     .botao-perfil{
         width: 10%;
     }
@@ -429,12 +599,8 @@ margin-top:32px;
     .conta-menu{
         display: none;
     }
-    .logo{
-        display: none;
-    }
-    .logo-mobile{
-        display: block;
-    }
+
+
     .input-procurar{
         width: 100%;
     }
@@ -519,6 +685,7 @@ margin-top:32px;
     .botoes-inferior{
         
     }
+    
 }
 
 

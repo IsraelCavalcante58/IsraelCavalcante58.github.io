@@ -23,7 +23,6 @@
                 <i class="fa-solid fa-bars"></i>
             </div>
             <div class="col-md-8 coluna-logo">
-                <div class="logo-mobile">Health Track</div>
             </div>
             <div class="col-md-2 botao-perfil">
                 <i class="fa-solid fa-user"></i>
@@ -34,6 +33,49 @@
 </header>
 
 <body>
+    <div class="header">
+        <p class="logo-mobile-animacao">
+            Health Track
+        </p>
+    </div>
+
+    <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+    <label for="openSidebarMenu" class="sidebarIconToggle">
+        <div class="spinner diagonal part-1"></div>
+        <div class="spinner horizontal"></div>
+        <div class="spinner diagonal part-2"></div>
+    </label>
+
+    <div id="sidebarMenu">
+    
+        <ul class="sidebarMenuInner">
+    
+            <li>
+                <div class="notificacao">
+                    <label class="num-notificacao">9</label>
+                    <i class="fa-solid fa-circle circulo-icone-notificacao"></i>
+                    <i title="Notificações" class="fa-regular fa-bell notificacao-icone botoes-menu"></i>
+                </div>
+            </li>
+    
+            <li>
+                <i title="Menu Principal" class="fa-solid fa-house home-menu botoes-menu"></i>
+            </li>
+    
+            <li>
+                <i title="Sono" class="fa-solid fa-moon botoes-menu sono"></i>
+            </li>
+            <li><i title="Amigos" class="fa-solid fa-user-group
+                                          botoes-menu amigo-botao"></i></li>
+            <li>
+                <i title="Ranking" class="fa-solid fa-medal botoes-menu ranking-botao"></i>
+            </li>
+    
+            <i title="Ajuda" class="fa-solid fa-circle-question ajuda-botao"></i>
+        </ul>
+    </div>
+    <div id='center' class="main center">
+
     <div class="container-fluid vh-100">
 
         <div class="row flex-grow-1 vh-100">
@@ -101,10 +143,7 @@
 
                         </div>
                     </div>
-                    <div class="col-md-5">
 
-                        <div class="logo">Health Track</div>
-                    </div>
 
                 </div>
 
@@ -115,7 +154,7 @@
                         <div class="descricao-grafico">
                             <span>Gráfico de Atividade e Calorias perdidas</span>
                         </div>
-                        <div id="chart">
+                        <div  id="chart">
 
 
                         </div>
@@ -323,7 +362,7 @@
     </div>
 
     </div>
-
+</div>
     <script src="dashboard.js"></script>
 
 </body>
