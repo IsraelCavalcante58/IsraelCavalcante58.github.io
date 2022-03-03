@@ -11,6 +11,7 @@
 
 @media screen {
 
+
     html, body{
         font-family: samsungsharp;
         background: #E5E5E5;
@@ -29,7 +30,8 @@
     }
 
     #menu-btn {
-        position: absolute;
+        display: none;
+        position: fixed;
         top: 50px;
         right: 20px;
         padding: 10px 20px;
@@ -39,6 +41,10 @@
         transition: border-color 0.3s;
         transform: translateY(-50%);
         z-index: 99;
+        color: white;
+        padding-right: 0px;
+        padding-bottom: 45px;
+        font-size: 20px;
     }
     #menu-btn i {
         margin-left: 10px;
@@ -48,7 +54,7 @@
         border-color: #fff;
     }
 
-    #menu__panel {
+    #menu-painel-mobile {
         position: fixed;
         top: 0;
         bottom: 0;
@@ -98,15 +104,15 @@
         line-height: 70px;
     }
 
-    .menu__close {
+    .menu-painel-mobile-fechar {
         position: absolute;
         top: 10px;
         left: 10px;
         padding: 5px 10px;
         transition: transform 0.5s;
     }
-    .menu__close:hover {
-        ursor: pointer;
+    .menu-painel-mobile-fechar:hover {
+        cursor: pointer;
     }
 
     /* CONTA MENU FIM */
@@ -273,7 +279,9 @@
     .gauge-grafico{
         text-align: center;
         font-size: 14px;
-        margin-top: 260px;
+        margin-top: 15vh;
+        
+        
     }
     .peso-perdido{
         color: grey;
@@ -644,15 +652,33 @@
 
 
 @media  only screen and (max-width: 1343px){
-
+    #menu-btn{
+        display: block;
+    }
     .sidebarIconToggle{
         display: block;
     }
     .logo-mobile-animacao{
         margin-left: 31%;
     }
-    
+    .botao-texto-conta-menu{
+        display: none;
+    }
+    .nome-usuario{
+        text-align: center;
+        margin-left: 2px;
+    }
+    .status-usuario{
+        text-align: center;
+        margin-left: none;
+    }
+    .avatar{
+        margin-left: 35%;
+    }
 
+    .menu-item-mobile{
+        padding-right:21px ;
+    }
     .botao-perfil{
         width: 10%;
     }
@@ -754,6 +780,9 @@
     .botoes-inferior{
         
     }
+    /* .tamanho-icone-perfil-mobile{
+        width: 25vh;
+    } */
     
 }
 
@@ -788,8 +817,20 @@
     .box-passos{
         padding-left: 20px;
     }
+    
+}
+
+@media  only screen and (max-height: 740px){
+    .gauge-grafico{
+        margin-top: 1vh;
+    }
 
 }
 
+@media only screen and (min-width: 768px) and (max-width: 1280px) and (min-width: 600px){
+    .tamanho-icone-perfil-mobile{
+        width: 260px;
+    }
+}
 
 

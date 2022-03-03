@@ -14,12 +14,11 @@
 
     <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
     <script src="https://kit.fontawesome.com/67f01a5142.js" crossorigin="anonymous"></script>
-    <script src="gauge.js"></script>
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="gauge.js"></script>
     
-
     <title>Health-Track Dashboard</title>
-
+    
 </head>
 <header>
         <div class="row">
@@ -32,57 +31,57 @@
                 <i class="fa-solid fa-user"></i>
             </div>
         </div>
+        
+        
+    </header>
     
-
-</header>
-
-<body>
-    <div class="header">
-        <p class="logo-mobile-animacao">
-            Health Track
-        </p>
-    </div>
-
-    <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
-    <label for="openSidebarMenu" class="sidebarIconToggle">
-        <div class="spinner diagonal part-1"></div>
-        <div class="spinner horizontal"></div>
-        <div class="spinner diagonal part-2"></div>
-    </label>
-
-    <div id="menu-btn" onClick="showMenu(true)">MENU<i class="fa fa-bars"></i></div>
-
-    <div id="sidebarMenu">
-    
-        <ul class="sidebarMenuInner">
-    
-            <li>
-                <div class="notificacao">
-                    <label class="num-notificacao">9</label>
-                    <i class="fa-solid fa-circle circulo-icone-notificacao"></i>
-                    <i title="Notificações" class="fa-regular fa-bell notificacao-icone botoes-menu"></i>
-                </div>
-            </li>
-    
-            <li>
-                <i title="Menu Principal" class="fa-solid fa-house home-menu botoes-menu"></i>
-            </li>
-    
-            <li>
-                <i title="Sono" class="fa-solid fa-moon botoes-menu sono"></i>
-            </li>
+    <body>
+        <div class="header">
+            <p class="logo-mobile-animacao">
+                Health Track
+            </p>
+        </div>
+        
+        <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+        <label for="openSidebarMenu" class="sidebarIconToggle">
+            <div class="spinner diagonal part-1"></div>
+            <div class="spinner horizontal"></div>
+            <div class="spinner diagonal part-2"></div>
+        </label>
+        
+        <div id="menu-btn" onClick="showMenu(true)"><i class="fa-solid fa-user"></i></div>
+        
+        <div id="sidebarMenu">
+            
+            <ul class="sidebarMenuInner">
+                
+                <li>
+                    <div class="notificacao">
+                        <label class="num-notificacao">9</label>
+                        <i class="fa-solid fa-circle circulo-icone-notificacao"></i>
+                        <i title="Notificações" class="fa-regular fa-bell notificacao-icone botoes-menu"></i>
+                    </div>
+                </li>
+                
+                <li>
+                    <i title="Menu Principal" class="fa-solid fa-house home-menu botoes-menu"></i>
+                </li>
+                
+                <li>
+                    <i title="Sono" class="fa-solid fa-moon botoes-menu sono"></i>
+                </li>
             <li><i title="Amigos" class="fa-solid fa-user-group
-                                          botoes-menu amigo-botao"></i></li>
-            <li>
-                <i title="Ranking" class="fa-solid fa-medal botoes-menu ranking-botao"></i>
-            </li>
-    
-            <i title="Ajuda" class="fa-solid fa-circle-question ajuda-botao"></i>
-        </ul>
-    </div>
-
-    <div id="menu__panel">
-        <i id="menu__close" class="menu__close fa fa-angle-left fa-2x" onClick="showMenu(false)"></i>
+                botoes-menu amigo-botao"></i></li>
+                <li>
+                    <i title="Ranking" class="fa-solid fa-medal botoes-menu ranking-botao"></i>
+                </li>
+                
+                <i title="Ajuda" class="fa-solid fa-circle-question ajuda-botao"></i>
+            </ul>
+        </div>
+        
+    <div id="menu-painel-mobile">
+        <i id="menu-painel-mobile-fechar" class="menu-painel-mobile-fechar fa fa-angle-left fa-2x" onClick="showMenu(false)"></i>
         <ul class="menu-conta-mobile">
             <li>
                 <div class="div-avatar">
@@ -92,16 +91,16 @@
                         </div>
                         <div class="col-md-7">
                             <p class="nome-usuario">Israel Cavalcante</p>
-                            <span class="status-usuario"> Está Online </span>
+                            <p class="status-usuario"> Está Online </p>
                         </div>
                     </div>
                 </div>
             </li>
-
+            
             <li class="menu-item-mobile">
                 <div class="row botao-margin-menu">
                     <div class="col-md-3 ">
-                        <div class="icone-meta">
+                        <div class="icone-meta tamanho-icone-perfil-mobile">
                             <i class="fa-solid fa-bullseye"></i>
                         </div>
                     </div>
@@ -112,11 +111,11 @@
                     </div>
                 </div>
             </li>
-
+            
             <li class="menu-item-mobile">
                 <div class="row botao-margin-menu">
                     <div class="col-md-3 ">
-                        <div class="icone-dieta">
+                        <div class="icone-dieta tamanho-icone-perfil-mobile">
                             <i class="fa-solid fa-apple-whole"></i>
                         </div>
                     </div>
@@ -131,7 +130,7 @@
             <li class="menu-item-mobile">
                 <div class="row botao-margin-menu">
                     <div class="col-md-3 ">
-                        <div class="icone-configuracao">
+                        <div class="icone-configuracao tamanho-icone-perfil-mobile">
                             <i class="fa-solid fa-gear "></i>
                         </div>
                     </div>
@@ -142,81 +141,81 @@
                     </div>
                 </div>
             </li>
-
+            
             <li class="menu-item-mobile">
                 <div class="row gauge-grafico">
                     <p>Meta Mensal</p>
                     <p>Peso perdido: 5kg <span class="peso-perdido">/ 10kg </span></p>
                     <div id="canvas-holder">
-                        <canvas id="gauge"></canvas>
+                        <canvas id="gauge-mobile"></canvas>
                     </div>
-
+                    
                 </div>
             </li>
-
+            
         </ul>
     </div>
-
+    
     <div id='center' class="main center">
-
-    <div class="container-fluid vh-100">
-
-        <div class="row flex-grow-1 vh-100">
-            <div class="col-md-1">
-
-                <div class="menu-dashboard">
-
-                    <div class="notificacao">
-                        <label class="num-notificacao">9</label>
-                        <i class="fa-solid fa-circle
-                                circulo-icone-notificacao"></i>
-                        <i title="Notificações" class="fa-regular fa-bell
-                                notificacao-icone botoes-menu"></i>
-
-
+        
+        <div class="container-fluid vh-100">
+            
+            <div class="row flex-grow-1 vh-100">
+                <div class="col-md-1">
+                    
+                    <div class="menu-dashboard">
+                        
+                        <div class="notificacao">
+                            <label class="num-notificacao">9</label>
+                            <i class="fa-solid fa-circle
+                            circulo-icone-notificacao"></i>
+                            <i title="Notificações" class="fa-regular fa-bell
+                            notificacao-icone botoes-menu"></i>
+                            
+                            
+                        </div>
+                        <hr>
+                        <div>
+                            <i title="Menu Principal" class="fa-solid fa-house
+                            home-menu botoes-menu"></i>
+                        </div>
+                        
+                        <div>
+                            <i title="Sono" class="fa-solid fa-moon botoes-menu
+                            sono"></i>
+                        </div>
+                        <div>
+                            <i title="Amigos" class="fa-solid fa-user-group
+                            botoes-menu amigo-botao"></i>
+                        </div>
+                        <div>
+                            <i title="Ranking" class="fa-solid fa-medal
+                            botoes-menu ranking-botao"></i>
+                        </div>
+                        <div>
+                            <i title="Ajuda" class="fa-solid fa-circle-question
+                            ajuda-botao"></i>
+                        </div>
                     </div>
-                    <hr>
                     <div>
-                        <i title="Menu Principal" class="fa-solid fa-house
-                                home-menu botoes-menu"></i>
-                    </div>
-
-                    <div>
-                        <i title="Sono" class="fa-solid fa-moon botoes-menu
-                                sono"></i>
-                    </div>
-                    <div>
-                        <i title="Amigos" class="fa-solid fa-user-group
-                                botoes-menu amigo-botao"></i>
-                    </div>
-                    <div>
-                        <i title="Ranking" class="fa-solid fa-medal
-                                botoes-menu ranking-botao"></i>
-                    </div>
-                    <div>
-                        <i title="Ajuda" class="fa-solid fa-circle-question
-                                ajuda-botao"></i>
+                        
                     </div>
                 </div>
-                <div>
-
-                </div>
-            </div>
-
-
-            <div class="col-md-9">
-                <div class="row">
-                    <div class="col-md-7">
-                        <div class="procurar">
-                            <div class="row">
-                                <div class="col-md-6 p-0 procurar-col-1">
-                                    <div class="form-outline">
-                                        <input placeholder="Procure" type="search" id="form1"
+                
+                
+                <div class="col-md-9">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <div class="procurar">
+                                <div class="row">
+                                    <div class="col-md-6 p-0 procurar-col-1">
+                                        <div class="form-outline">
+                                            <input placeholder="Procure" type="search" id="form1"
                                             class="form-control input-procurar" />
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="col-md-6 p-0 procurar-col-2">
-                                    <button type="button" class="btn btn-primary
+                                    <div class="col-md-6 p-0 procurar-col-2">
+                                        <button type="button" class="btn btn-primary
                                                                                             botao-procurar">
                                         <i class="fas fa-search"></i>
                                     </button>

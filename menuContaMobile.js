@@ -9,13 +9,13 @@ function showMenu(menu) {
     }
 
     // Slide panel
-    $("#menu__panel").css({
+    $("#menu-painel-mobile").css({
         transform: "translateX(" + slide + ")"
     });
 
     // Rotate icon
     setTimeout(function () {
-        $("#menu__close").css({
+        $("#menu-painel-mobile-fechar").css({
             transform: "rotate(" + angle + ")"
         });
     }, 300);

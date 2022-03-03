@@ -56,6 +56,8 @@ var config = {
 window.onload = function () {
     var ctx = document.getElementById('gauge').getContext('2d');
     window.myGauge = new Chart(ctx, config);
+    var ctx = document.getElementById('gauge-mobile').getContext('2d');
+    window.myGauge = new Chart(ctx, config);
 };
 
 document.getElementById('randomizeData').addEventListener('click', function () {
