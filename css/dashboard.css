@@ -185,6 +185,16 @@
         margin-left: 30px;
         margin-top: 16px;
     }
+    .logout-mobile{
+    position: absolute;
+    margin-left: 54px;
+    margin-top: 3vh;
+    }
+    .logout{
+    position: absolute;
+    margin-left: 32px;
+    margin-top: 2vh;
+    }
 
     .botoes-menu{
         text-shadow: 0px 0px 5px #000000;
@@ -204,7 +214,7 @@
 
     .ajuda-botao{
         text-shadow: 0px 0px 5px #000000;
-        margin-top: 570px;
+        margin-top: 560px;
         margin-left: 38px;
         font-size: 20px;
         color: white;
@@ -499,7 +509,7 @@
         position: fixed;
         height: 60px!important;
         overflow: hidden;
-        z-index: 10;
+        z-index: 99;
     }
 
 
