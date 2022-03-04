@@ -10,12 +10,11 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="./bootstrap-5.0.2-dist/css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="./css/registrar.css">
+    <link rel="stylesheet" type="text/css" href="../css/registrar.css">
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
-    <script src="./teste.js"></script>
 
     <title>Health-Track Registrar</title>
 </head>
@@ -174,13 +173,108 @@
 
 
                                 <div class="row flex-grow-1">
+
                                     <div class="col-md-3 enviar-btn">
-                                        <a class="btn btn-primary botao-enviar" href="./dashboard.html"
-                                            role="button">Enviar</a>
+
+                                        <a class="btn btn-primary botao-enviar" data-bs-toggle="modal"
+                                            data-bs-target="#termosModal" "
+                                            role=" button">Enviar</a>
+
+                                            <!-- Criei um simples termos de serviço, onde o usuário tem que aceitar antes de continuar a criação da conta (Quando ele clicar em enviar, será redirecionado para a janela modal que o informará dos termos. Caso o usuário aceite, será redirecionado para a Dashboard, caso contrário, nada acontecerá e o registro não será concluído) -->
+
+                                        <!-- Termos e condições de serviço -->
+                                        <div class="modal fade" id="termosModal" tabindex="-1"
+                                            aria-labelledby="termosModal" aria-hidden="true">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="termosModal">Termos e contrato
+                                                            de serviço</h5>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                            aria-label="Close"></button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                                        Curabitur cursus ipsum eleifend, placerat neque
+                                                        et, molestie
+                                                        tortor. Nulla bibendum vehicula laoreet. Nulla in turpis eu
+                                                        massa sodales pellentesque. Mauris urna
+                                                        tortor, facilisis ut
+                                                        laoreet ac, gravida ut eros. Donec at auctor ipsum, eget
+                                                        volutpat velit. Aliquam tellus arcu, pretium
+                                                        vitae justo ut,
+                                                        sodales tincidunt felis. Mauris est libero, pellentesque a
+                                                        ultrices eget, dapibus id augue. Quisque dui
+                                                        ante, porta eget
+                                                        turpis eu, molestie laoreet libero. Proin sed nisl at nulla
+                                                        tempor pharetra. Curabitur sed euismod orci,
+                                                        eget ultricies
+                                                        libero. Nulla eget lectus risus. Class aptent taciti sociosqu ad
+                                                        litora torquent per conubia nostra, per
+                                                        inceptos
+                                                        himenaeos. In a dui vel dui commodo volutpat. Nulla vitae metus
+                                                        nec massa malesuada interdum ut sed est.
+                                                        Pellentesque
+                                                        habitant morbi tristique senectus et netus et malesuada fames ac
+                                                        turpis egestas.
+
+                                                        Pellentesque et interdum nulla. Lorem ipsum dolor sit amet,
+                                                        consectetur adipiscing elit. Aliquam eget
+                                                        dolor sit amet
+                                                        lacus accumsan pretium vel ac mi. Ut at risus imperdiet,
+                                                        pulvinar arcu ac, ultrices sem. Suspendisse
+                                                        congue, magna ut
+                                                        tempus blandit, nisi dui lobortis diam, sit amet placerat velit
+                                                        turpis eu lectus. Praesent efficitur,
+                                                        urna ac accumsan
+                                                        posuere, massa neque blandit dolor, sed euismod enim lectus a
+                                                        augue. Duis vitae sagittis enim. Sed
+                                                        pellentesque enim at
+                                                        lacus porttitor, eget facilisis ipsum pretium. Sed vitae odio ac
+                                                        velit rutrum vehicula. Pellentesque in
+                                                        urna at enim
+                                                        ullamcorper feugiat ut et mi.
+
+                                                        Nullam at risus in nulla laoreet pretium. Phasellus ut
+                                                        pellentesque elit, et luctus magna. Donec ac mi
+                                                        non lorem
+                                                        suscipit tincidunt. Ut pharetra orci ut egestas tristique.
+                                                        Aenean pretium convallis nisl eu mollis.
+                                                        Maecenas luctus
+                                                        mattis felis commodo viverra. Vivamus facilisis accumsan neque
+                                                        at cursus. Cras rhoncus lectus a
+                                                        pellentesque tincidunt.
+                                                        Duis pulvinar ex ut condimentum euismod. Curabitur sit amet quam
+                                                        in nisi imperdiet finibus. Nunc lacinia
+                                                        ultricies
+                                                        semper. Quisque vulputate risus in metus lacinia rutrum.
+                                                        Curabitur tempor rhoncus neque. Fusce porta
+                                                        tristique
+                                                        vestibulum. Quisque sit amet lobortis mauris, dignissim finibus
+                                                        mauris.
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-secondary"
+                                                                data-bs-dismiss="modal">Fechar</button>
+                                                            <a href="./dashboard.html"><button type="button"
+                                                                    class="btn btn-primary">Aceito</button></a>
+
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
 
 
+
+
+
                                 </div>
+
+
+
+                            </div>
                     </form>
                 </div>
 
@@ -188,6 +282,7 @@
             </div>
         </div>
     </div>
+    <script src="../Javascript/Registrar/termo.js"></script>
 </body>
 
 

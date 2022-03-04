@@ -26,8 +26,10 @@ background: #E5E5E5;
 		
 @media screen 
 {
-    
 
+    .enviar-btn{
+        width: 10%;
+    }
     .botao-enviar{
        
         margin-top: 30px;
@@ -156,10 +158,12 @@ background: #E5E5E5;
     }
 }
 
+
  option:hover { 
       background-color: yellow; 
     } 
-
+    /*  Versão/Responsividade para dispositivos portáteis/pequeno porte */
+    
     @media  only screen and (max-width: 1280px){
         .container-registro{
         
@@ -172,12 +176,12 @@ background: #E5E5E5;
 
     @media  only screen and (max-width: 740px){
         .container-registro{
-
+        
         background: #E5E5E5;  
         padding-right: 5%;
         padding-left: 5%;
         
     }
+    
 
     }  
-}

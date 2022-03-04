@@ -18,73 +18,24 @@
 		
 @media screen 
 {
- 
-    .background-logo{
-        
-        background: linear-gradient(180deg, #6D63FF 0%, #3B32C0 100%);
-        
-        
+    .vh-100 {
+        max-height: fit-content;
     }
-
-    .botao-entrar{
-        width: 100%;
-        margin-top: 30px;
-     background: linear-gradient(180deg, #6D63FF 0%, #3B32C0 100%);
-
+    
+     html  {
+    height: 100%;
+    font-family: samsungsharp;
     }
-
-    .hyperlink-botao-entrar{
-        width: 100%;
-        margin-top: 30px;
-        color: white;
-        text-decoration: none;
-    }
-
-    .titulo-login{
-        margin-bottom: 2px;
-        font-size: 30px;
-        font-weight: bold;
-    }
-
-    .descricao-login{
-        margin-bottom: 20px;
-        color: #8692A6;
-    }
-
-    .centralizando-tela-login{
-        padding: 10%;
-    }
-
-    .espaco-input{
-        margin: auto;
-    }
-
-    .espaco-mostrar-senha{
-        margin: auto;
-    }
-
-    div.borda-tela-login{
-        font-family: sans-serif !important;
-        padding: 40px;
-        border: 1px solid rgb(209, 206, 206);
-        border-radius: 2%;
-        
-    }
-
-    .hyperlink-registrar{
-        text-decoration: none;
-    }
-
-
-
-    .logo-login{
+  
+    /* Estilização da parte esquerda (Banner) */
+        .logo-login{
         
         
         font-size: 30px;
         text-align: center;
         font-family: poetsenone;
     }
-    .logo-login2{
+    .logo-login-mobile{
         display: none;
         font-size: 30px;
         text-align: center;
@@ -98,17 +49,22 @@
         height: 7%;
         width: 7%;
     }
-
-
-    html  {
-    height: 100%;
-    font-family: samsungsharp;
+    .titulo-login{
+        margin-bottom: 2px;
+        font-size: 30px;
+        font-weight: bold;
     }
+    .background-logo{
+        background: linear-gradient(180deg, #6D63FF 0%, #f87070 100%);
+ 
+    }
+
+    .descricao-login{
+        margin-bottom: 20px;
+        color: #8692A6;
+    }
+
     
-    .vh-100 {
-        max-height: fit-content;
-    }
-
     .gif-logo-login{
         width: auto;
         height: auto;
@@ -168,6 +124,48 @@
     .tela-login-banner{
         padding: 7%;
     }
+
+
+    /* Estilização lado direito (Formulário de Login) */
+
+    
+    .espaco-input{
+        margin: auto;
+    }
+      .centralizando-tela-login{
+    padding: 10%;
+    }
+
+
+    .botao-entrar{
+        width: 100%;
+        margin-top: 30px;
+     background: linear-gradient(180deg, #6D63FF 0%, #3B32C0 100%);
+
+    }
+
+    .hyperlink-botao-entrar{
+        width: 100%;
+        margin-top: 30px;
+        color: white;
+        text-decoration: none;
+    }
+    .espaco-mostrar-senha{
+        margin: auto;
+    }
+
+    div.borda-tela-login{
+        font-family: sans-serif !important;
+        padding: 40px;
+        border: 1px solid rgb(209, 206, 206);
+        border-radius: 2%;
+        
+    }
+
+    .hyperlink-registrar{
+        text-decoration: none;
+    }
+
     .label-input{
         display: block;
     }
@@ -229,35 +227,28 @@
 
         
     }
-
-    .banner{
-     
-    }
-        
+   
 }
 
 
 
 
-
+/* Media para dispositivos móveis */
 
 @media  only screen and (max-width: 768px){
+    /* Dispositivos móveis/portáteis de pequeno porte não verão o banner rotativo. */
     .banner{
         display: none;
     }
-    .logo-login2{
+    /* Aqui é uma logo que eu criei especificamente para a versão mobile */
+    .logo-login-mobile{
         display: block;
     }
     
 }
 
 
-.row-banner{
-    
-}
-.icon-mostrar-senha{
-    
-}
+
 
 
 

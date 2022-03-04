@@ -1,4 +1,6 @@
-let time= 7000,
+// Slide que fica trocando a foto / texto do banner
+
+let time = 7000,
    currentImageIndex = 0,
    images = document.querySelectorAll("#slider div")
    max = images.length;

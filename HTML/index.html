@@ -5,26 +5,29 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link rel="stylesheet" href="./icons-1.8.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="../icons-1.8.1/font/bootstrap-icons.css">
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-  <link rel="stylesheet" type="text/css" href="./css/index.css">
+  <link rel="stylesheet" type="text/css" href="../css/index.css">
   <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
-  <script src="./bootstrap-5.0.2-dist/js/bootstrap.bundle.js"></script>
+  <script src="../bootstrap-5.0.2-dist/js/bootstrap.bundle.js"></script>
+  <script src="../Javascript/Index/senha.js"></script>
 
   <title>Health-Track Login</title>
 </head>
 
 <body>
+  <!-- Corpo de todo o HTML, onde tem todo o código -->
   <div class="container-fluid  d-flex flex-column vh-100">
-
+    <!-- Row onde engloba todo o código -->
     <div class="row flex-grow-1">
-
+      <!-- Coluna referente á parte esquerda, onde se tem o banner -->
       <div class="col-md-6 background-logo flex-fill banner ">
-        <div class="logo-login">Health Track</div>
-        <img src="./Imagens/logo.png" class="logo-imagem-login">
+        <header><div class="logo-login">Health Track</div>
+        <img src="../Imagens/logo.png" class="logo-imagem-login">
+      </header>
         <div class=" row-banner" id="slider">
           <div class="selected tela-login-banner">
             <label class="titulo-login-frases">Veja seus padrões de sono para um amanhã melhor</label>
@@ -32,7 +35,7 @@
               horas. Sinta-se mais descansado otimizando seu horário de dormir com o Health Track. Monitore seu sono
               durante toda a noite e tenha informações valiosas sobre como você está dormindo de verdade.
             </label>
-            <img src="./Imagens/menina-acordando.jpg" class="imagem-login-frases-1" alt="Gif de login">
+            <img src="../Imagens/menina-acordando.jpg" class="imagem-login-frases-1" alt="Gif de login">
           </div>
           <div class="tela-login-banner ">
             <label class="titulo-login-frases">Monitore seu condicionamento físico com a composição corporal</label>
@@ -41,7 +44,7 @@
               escolhas de vida melhores e mais saudáveis que o mantenham motivado.
 
             </label>
-            <img src="./Imagens/ser-fitness.webp" class="imagem-login-frases-2" alt="Gif de login">
+            <img src="../Imagens/ser-fitness.webp" class="imagem-login-frases-2" alt="Gif de login">
           </div>
           <div class="tela-login-banner ">
             <label class="titulo-login-frases">Você é o que come</label>
@@ -49,20 +52,22 @@
               lanches diários com o Health Track. Descubra seus hábitos alimentares baseado no seu consumo diário de
               vitaminas e nutrientes e tome medidas para ter uma dieta mais equilibrada.
             </label>
-            <img src="./Imagens/comida-fitness.jpg" class="imagem-login-frases-2" alt="Gif de login">
+            <img src="../Imagens/comida-fitness.jpg" class="imagem-login-frases-2" alt="Gif de login">
           </div>
         </div>
-    
+
       </div>
 
-
+      <!-- Coluna esquerda onde tem toda a parte de Login -->
       <div class="col-md-6 centralizando-tela-login  flex-fill">
-        <div class="logo-login2">Health Track</div>
+        <div class="logo-login-mobile">Health Track</div>
         <div class="borda-tela-login">
           <div class="titulo-login">Login</div>
           <div class="descricao-login">Se você já é um membro, pode fazer o login com seu endereço de e-mail e senha.
           </div>
+          <!-- Formulário de login -->
           <form>
+            <!-- Inputs referentes ao E-mail -->
             <label for="email">E-mail: </label>
             <div class="input-group mb-3 ">
               <div class="input-group-prepend">
@@ -71,7 +76,7 @@
               <input type="text" class="form-control email" placeholder="Digite o e-mail" aria-label="email"
                 aria-describedby="basic-addon1">
             </div>
-
+            <!-- Inputs referentes á senha -->
             <label for="pwd">Senha: </label>
             <div class="input-group mb-3">
               <div class="input-group-prepend">
@@ -79,9 +84,8 @@
               </div>
               <input type="password" class="form-control" id="minha-senha" placeholder="Digite a senha"
                 aria-label="Senha" aria-describedby="basic-addon1">
-
             </div>
-
+            <!-- Input de exibir senha -->
             <div class="form-check pt-1 espaco-input espaco-mostrar-senha">
               <input onclick="LembrarSenha()" class="form-check-input" type="checkbox" value="" id="lembrar-senha">
               <label class="form-check-label" for="lembrar-senha">
@@ -89,18 +93,20 @@
               </label>
             </div>
 
-
+            <!-- Input lembrar-me (salvar usuário e senha para um próximo login) -->
             <div class="form-check pt-1 espaco-input">
               <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
               <label class="form-check-label" for="flexCheckDefault">
                 Lembrar-me
               </label>
             </div>
-
+            <!-- O hyperlink abaixo diz que: quando o usuário clicar em entrar será redirecionado para a Dashboard -->
             <a class="btn btn-primary botao-entrar" href="./dashboard.html" role="button">Entrar</a>
+            <!-- O hyperlink abaixo diz que: quando o usuário clicar em registrar será redirecionado para o cadastro -->
             <div class="registrar-usuario pt-3">Não tem uma conta?<a href="./registrar.html"
                 class="hyperlink-registrar"> Clique aqui</a>
             </div>
+            <!-- Aqui tem a forma para entrar com o Google Account, também será redirecionado para o Dashboard -->
             <div class="opcao-google">Ou</div>
             <div class="google-btn"><a href="./dashboard.html" role="button">
                 <div class="google-icon-wrapper">
@@ -115,6 +121,7 @@
 
       </div>
       </form>
+      <!-- Final do formulário de Login -->
     </div>
 
 
@@ -124,7 +131,7 @@
 
   </div>
 
-  <script src="javascript.js">
+  <script src="./Javascript/Index/banner.js">
 
   </script>
 </body>

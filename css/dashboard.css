@@ -9,18 +9,25 @@
     src: url("../fontes/poetsen-one.ttf");
   }
 
-@media screen {
-
-
     html, body{
         font-family: samsungsharp;
         background: #E5E5E5;
         min-width: 100%;
         overflow-x: hidden;
     }
-    .vh-100 {
+
+        .vh-100 {
             min-height: 100vh;
         }
+
+        /* Tentei não usar tanto CSS, como descrito na atividade, porém falhei miseravelmente, estou gostando muito dessa linguagem de estilização e pretendo me aprofundar mais nela, inclusive até optando por usar ela ao invés do Bootstrap*/
+
+
+@media screen {
+
+
+
+
 
     /* CONTA MENU INICIO */
 
@@ -121,7 +128,7 @@
         
         margin-top: 20px;
         height: 95%;
-        background: linear-gradient(180deg, #6D63FF 0%, #3B32C0 100%);
+        background: linear-gradient(180deg, #6D63FF 0%, #f87070 100%);
         border-radius: 40px;
         width: 97px;
     }
@@ -288,7 +295,7 @@
     .gauge-grafico{
         text-align: center;
         font-size: 14px;
-        margin-top: 15vh;
+        margin-top: 29vh;
         
         
     }
@@ -841,5 +848,6 @@
         width: 260px;
     }
 }
+
 
 
