@@ -1,7 +1,9 @@
 // GRÁFICO DE CALORIAS/PASSOS
 var options = {
 
-
+    toolbar: {
+        show: false,
+    },
 
     series: [{
         name: 'Passos',
