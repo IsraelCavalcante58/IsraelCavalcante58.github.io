@@ -96,9 +96,7 @@
         transform: translateY(0);
         transition: all 0.3s;
     }
-    .menu-item-mobile:hover {
-        background-color: #29435C;
-    }
+
     .menu-item-mobile i {
         margin: 0 10px;
     }
@@ -198,7 +196,6 @@
     margin-top: 3vh;
     }
     .logout{
-    position: absolute;
     margin-left: 32px;
     margin-top: 2vh;
     }
@@ -221,7 +218,8 @@
 
     .ajuda-botao{
         text-shadow: 0px 0px 5px #000000;
-        margin-top: 560px;
+        position: sticky;
+        padding-top: 54vh;
         margin-left: 38px;
         font-size: 20px;
         color: white;
@@ -314,8 +312,14 @@
         margin-top: 10px;
     }
     .botao-margin-menu{
+        border-radius: 7px;
         margin-top: 10px;
-        margin-left: 10px;
+    margin-left: 10px;
+    margin-right: 62px;
+    }
+    .botoes-conta-menu-config{
+        padding-left: 0px;
+        padding-right:0px;
     }
 
     .icone-dieta{
@@ -332,7 +336,9 @@
         background: #FEF0E7;
         font-size: 30px;
         text-align: center;
+        
     }
+
     .botoes-conta-menu{
         margin-top: 200px;
     }
@@ -546,11 +552,11 @@
         height: 100%;
         position: fixed;
         left: 0;
-        width: 135px;
+        width: 107px;
         margin-top: 60px;
         transform: translateX(-250px);
         transition: transform 250ms ease-in-out;
-        background: linear-gradient(180deg, #6D63FF 0%, #3B32C0 100%);
+        background: linear-gradient(180deg, #6D63FF 0%, #f87070 100%);
         
     }
     .sidebarMenuInner{
@@ -661,13 +667,98 @@
     font-size: 30px;
     margin-top: 10px;
     }
+    .botao-margin-menu:hover{
+            box-shadow:  4px 1px 7px -1px rgb(0 0 0 / 25%);
+            
 
+}
+
+a {
+        color: black;
+    text-decoration: none;
 }
 
 
 
 
+
 @media  only screen and (max-width: 1343px){
+
+    .coluna-avatar-nome{
+        width: 100%;
+    }
+
+    
+    .ajuda-botao{
+        display: none;
+    }
+    .botao-margin-menu{
+        margin-right: 0px;
+    }
+    
+    .tamanho-icone-perfil-mobile{
+        padding-right: 0px;
+        padding-left: 0px;
+        width: 100%;
+    }
+
+    .icone-meta:hover{
+                box-shadow: 0px 4px 7px -1px rgb(0 0 0 / 25%);
+
+    }
+    .icone-dieta:hover{
+                box-shadow: 0px 4px 7px -1px rgb(0 0 0 / 25%);
+
+    }
+    .icone-configuracao:hover{
+                box-shadow: 0px 4px 7px -1px rgb(0 0 0 / 25%);
+
+    }
+
+
+    .num-notificacao {
+    
+    margin-top: 20px;
+    
+    margin-left: 40px;
+  
+}
+
+.circulo-icone-notificacao {
+   
+    margin-top: 20px;
+   
+    margin-left: 34px;
+ 
+  
+}
+.notificacao-icone {
+    margin-top: 20px;
+    margin-left: 19px;
+}
+.home-menu {
+    margin-left: 15px;
+    margin-top: 16px;
+}
+.sono {
+    margin-left: 22px;
+    margin-top: 20px;
+}
+
+.amigo-botao {
+    font-size: 30px;
+    margin-top: 20px;
+    margin-left: 15px;
+}
+.ranking-botao {
+    margin-top: 20px;
+    margin-left: 16px;
+}
+.logout-mobile {
+    position: absolute;
+    margin-left: 37px;
+    margin-top: 3vh;
+}
     #menu-btn{
         display: block;
     }
@@ -796,10 +887,7 @@
     .botoes-inferior{
         
     }
-    /* .tamanho-icone-perfil-mobile{
-        width: 25vh;
-    } */
-    
+
 }
 
 
@@ -843,11 +931,6 @@
 
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1280px) and (min-width: 600px){
-    .tamanho-icone-perfil-mobile{
-        width: 260px;
-    }
-}
 
 
 

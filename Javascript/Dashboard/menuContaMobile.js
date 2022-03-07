@@ -1,5 +1,4 @@
 function showMenu(menu) {
-
     var angle = '0deg',
         slide = '300px';
 

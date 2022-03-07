@@ -243,6 +243,9 @@
     /* Aqui é uma logo que eu criei especificamente para a versão mobile */
     .logo-login-mobile{
         display: block;
+          background: -webkit-linear-gradient(#6D63FF 0%, #3B32C0 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
     }
     
 }
